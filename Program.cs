@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*************************
+* Автор: Черненко Никита.*
+* Дата: 19.03.2026       *
+* Вариант -              *
+**************************/
+
+using System;
 using System.IO;
 using System.Collections.Generic;
 using System.Runtime.Serialization.Formatters.Binary;
@@ -365,7 +371,6 @@ namespace TextEditor {
         Console.WriteLine("---------------------------------");
       }
 
-      // СОКРАЩЕНО: один WriteLine вместо 13
       Console.WriteLine(
           "1. Create new file\n" +
           "2. Open file\n" +
@@ -437,7 +442,9 @@ namespace TextEditor {
       Console.WriteLine("---------------------------------");
       Console.WriteLine("Enter new content (empty line to finish):");
 
-      string newContent = "";
+      string newContent;
+      newContent = "";
+
       string line = Console.ReadLine();
 
       while (line != "") {
@@ -488,9 +495,13 @@ namespace TextEditor {
       Console.Write("Enter keywords (space separated): ");
       string keywordsInput = Console.ReadLine();
 
-      string[] keywords = new string[10];
-      int keywordCount = 0;
-      string currentKeyword = "";
+      string[] keywords;
+      int keywordCount;
+      string currentKeyword;
+
+      keywords = new string[10];
+      keywordCount = 0;
+      currentKeyword = "";
 
       for (int charIndex = 0; charIndex < keywordsInput.Length; ++charIndex) {
         if (keywordsInput[charIndex] == ' ') {
@@ -531,9 +542,13 @@ namespace TextEditor {
       Console.Write("Enter keywords (space separated): ");
       string keywordsInput = Console.ReadLine();
 
-      string[] keywords = new string[10];
-      int keywordCount = 0;
-      string currentKeyword = "";
+      string[] keywords;
+      int keywordCount;
+      string currentKeyword;
+
+      keywords = new string[10];
+      keywordCount = 0;
+      currentKeyword = "";
 
       for (int charIndex = 0; charIndex < keywordsInput.Length; ++charIndex) {
         if (keywordsInput[charIndex] == ' ') {
